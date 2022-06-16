@@ -22,4 +22,4 @@
   when: ansible_architecture == "x86_64"
 
 - name: Set OpenJDK as the default
-  alternatives: name=java path="/usr/lib/jvm/java-{{ java_major_version }}-openjdk-{{ ansible_architecture }}/jre/bin/java"
+  alternatives: name=java path="/usr/lib/jvm/java-{{ java_major_version }}-openjdk-{{ ansible_architecture }}/bin/java"
